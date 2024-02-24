@@ -16,12 +16,24 @@ class DogController extends Controller
     public function add(Request $request)
     {
         $request->validate([
-            'breed_name' => 'required',
+            'breed_name' => 'required|string|max:50',
             'size' => 'required',
-            'hair_color' => 'required',
+            'hair_color' => 'required|string',
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
-        $dog = Dog::create($request->all());
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('images/dogs', 'public');
+        } else {
+            $imagePath = null;
+        }
+
+        $dog = Dog::create([
+            'breed_name' => $request->breed_name,
+            'size' => $request->size,
+            'hair_color' => $request->hair_color,
+            'image_path' => $imagePath,
+        ]);
 
         return response()->json(['message' => 'Dog created successfully', 'dog' => $dog], 201);
     }

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Dog;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,11 +13,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        Dog::create([
+            'breed_name' => 'Golden Retriever',
+            'size' => 'Large',
+            'hair_color' => 'Golden',
+            'image_path' => null,
+        ]);
     }
 }

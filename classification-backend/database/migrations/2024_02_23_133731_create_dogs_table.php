@@ -13,6 +13,7 @@ return new class extends Migration
             $table->string('breed_name');
             $table->string('size');
             $table->string('hair_color');
+            $table->string('image_path')->nullable();
             $table->timestamps();
         });
     }
