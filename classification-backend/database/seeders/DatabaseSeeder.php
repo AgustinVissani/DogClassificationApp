@@ -14,9 +14,9 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Dog::create([
-            'breed_name' => 'Golden Retriever',
-            'size' => 'Large',
-            'hair_color' => 'Golden',
+            'breed_name' => 'West Highland Terrier (Westy)',
+            'size' => 'Pequeño',
+            'hair_color' => 'Blanco',
             'image_path' => null,
         ]);
     }
