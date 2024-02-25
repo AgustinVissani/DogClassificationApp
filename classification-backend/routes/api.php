@@ -22,3 +22,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/dogs', [DogController::class, 'add'])->name('dogs.add');
 
 Route::get('/dogs', [DogController::class, 'index'])->name('dogs.index');
+
+Route::delete('/dogs/{id}', [DogController::class, 'delete'])->name('dogs.delete');
+
+Route::put('/dogs/{id}', [DogController::class, 'edit'])->name('dogs.edit');
