@@ -1,1 +1,39 @@
 // app global css in SCSS form
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+  }
+
+.title-form .title {
+    color: #0c3866;
+    font-size: 22px;
+}
+
+.no-padding-top {
+    padding-top: 0 !important;
+}
+
+.dog-form {
+    margin-bottom: 50px;
+}
+
+.dog-form .form-container {
+    background-color: #f4f4f4;
+    padding: 30px;
+}
+
+.save-dog {
+    border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+    .row>.offset-md-3 {
+        margin-left: 25%;
+    }
+    .row>.col-md-6 {
+        height: auto;
+        width: 50%;
+    }
+}
+
