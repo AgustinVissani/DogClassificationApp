@@ -51,6 +51,14 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+    <q-footer fixed class="bg-primary text-white">
+    <hr color="#0c3866" />
+    <q-toolbar class="row items-center q-gutter-md">
+      <div class="q-gutter-sm col-xs-12">
+        Copyright © 2024 - Dogs App. All rights reserved.
+      </div>
+    </q-toolbar>
+  </q-footer>
   </q-layout>
 </template>
 
