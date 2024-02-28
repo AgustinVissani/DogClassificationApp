@@ -7,6 +7,7 @@ const routes = [
       { path: '', component: () => import('pages/IndexPage.vue') },
       { path: '/upload-dog', component: () => import('pages/UploadDog.vue') },
       { path: '/dog-details', component: () => import('pages/DogDetailsPage.vue') },
+      { path: '/europa-language-jobs', component: () => import('pages/EuropeLanguageJobs.vue') },
     ]
   },
 
