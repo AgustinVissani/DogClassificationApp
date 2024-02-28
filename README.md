@@ -60,5 +60,7 @@ La aplicación frontend estará disponible en http://localhost:8080.
 ## Uso
 La aplicación inicia en una página simple con un logo central. Cuenta con un navbar que contiene un boton a su izquierda para dirigir al Home, y dos botones sobre la derecha para Agregar perros y ver un listado de los mismos.
 Dentro de Agregar, se encuentra un formulario sencillo con 4 campos a completar para agregar los datos del perro (Nombre de la raza, Color de pelo, Tamaño y Foto), completando los datos y haciendo click en Guardar se registra el nuevo perro en la base de datos.
-Por último, en la sección Listar se puede ver una lista de los perros guardados con sus caracteristicas y fotos. A su vez, cada item de la lista cuenta con dos botones dando la posibilidad de eliminar y/o editar el perro en cuestion.
+En la sección Listar se puede ver una lista de los perros guardados con sus caracteristicas y fotos. A su vez, cada item de la lista cuenta con dos botones dando la posibilidad de eliminar y/o editar el perro en cuestion.
+Por último, fue agregada la sección Europe Language Jobs en el menú que es una maquetación de la página 
+https://www.europelanguagejobs.com/companies
 
