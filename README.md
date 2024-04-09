@@ -1,20 +1,18 @@
-# Prueba técnica
-
-Este proyecto consiste en la implementación de un clasificador de perros utilizando las tecnologías Laravel, VueJS 3 con Composition API y Quasar. El objetivo principal es crear una Single Page Application (SPA) que permita a los usuarios subir una foto de un perro junto con información detallada, como el nombre de la raza, tamaño y color de pelo.
+# Technical Test
+This project involves the implementation of a dog classifier using Laravel, VueJS 3 with Composition API, and Quasar technologies. The main objective is to create a Single Page Application (SPA) that allows users to upload a photo of a dog along with detailed information such as breed name, size, and hair color.
 
 ## Configuración del Entorno
 
-## Requisitos Previos
+## Prerequisites
+-PHP
+-Composer
+-NPM
 
-- PHP 
-- Composer
-- NPM
+## Database Configuration
 
-## Configuración de la Base de Datos
-
-0. Dentro de la carpeta classification-backend:
-1. Copia el archivo `.env.example` y renómbralo a `.env`.
-2. Configura las variables de entorno en el archivo `.env` para la conexión a la base de datos.
+1. Inside the classification-backend folder:
+2. Copy the .env.example file and rename it to .env.
+3. Configure the environment variables in the .env file for the database connection.
 
 ```env
 DB_CONNECTION=mysql
@@ -24,10 +22,10 @@ DB_DATABASE=nombre_de_tu_base_de_datos
 DB_USERNAME=nombre_de_tu_usuario
 DB_PASSWORD=contraseña_de_tu_usuario
 ```
-2. Puede inicializar su base de datos usando el comando migrate:refresh, que también revertirá y volverá a ejecutar todas sus migraciones con datos pre-cargados:
+2. You can initialize your database using the migrate:refresh command, which will also rollback and re-run all of your migrations with pre-seeded data:
 ``php artisan migrate:refresh --seed``
 
-## Instalación de Dependencias
+## Dependency Installation
 
 ### Backend
 ```
@@ -41,8 +39,7 @@ cd classification-frontend
 npm install
 ```
 
-## Ejecución del Proyecto
-
+## Running the Project
 ### Backend (Laravel)
 ```
 cd classification-backend
@@ -55,12 +52,11 @@ La aplicación estará disponible en http://localhost:8000.
 cd classification-frontend
 npm quasar dev
 ```
-La aplicación frontend estará disponible en http://localhost:8080.
+The application will be available at http://localhost:8000.
 
-## Uso
-La aplicación inicia en una página simple con un logo central. Cuenta con un navbar que contiene un boton a su izquierda para dirigir al Home, y dos botones sobre la derecha para Agregar perros y ver un listado de los mismos.
-Dentro de Agregar, se encuentra un formulario sencillo con 4 campos a completar para agregar los datos del perro (Nombre de la raza, Color de pelo, Tamaño y Foto), completando los datos y haciendo click en Guardar se registra el nuevo perro en la base de datos.
-En la sección Listar se puede ver una lista de los perros guardados con sus caracteristicas y fotos. A su vez, cada item de la lista cuenta con dos botones dando la posibilidad de eliminar y/o editar el perro en cuestion.
-Por último, fue agregada la sección Europe Language Jobs en el menú que es una maquetación de la página 
-https://www.europelanguagejobs.com/companies
+## Usage
+The application starts on a simple page with a central logo. It has a navbar containing a button on its left to navigate to the Home, and two buttons on the right to Add dogs and view a list of them.
+Inside Add, there is a simple form with 4 fields to complete to add the dog's data (Breed Name, Hair Color, Size, and Photo). By completing the data and clicking Save, the new dog is registered in the database.
+In the List section, you can see a list of the saved dogs with their characteristics and photos. Additionally, each item in the list has two buttons giving the option to delete and/or edit the respective dog.
+Lastly, the Europe Language Jobs section was added to the menu, which is a layout of the page https://www.europelanguagejobs.com/companies
 
